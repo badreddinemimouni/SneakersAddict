@@ -6,6 +6,10 @@ Site e-commerce de vente de chaussures de sport.
 
 J'ai réintialiser le dépôt car il y avait un fichier dans lequel il y avait mes accès outlook que j'avais mis pour le formulaire de contact et vu qu'on peut y avoir accès en allant dans l'historique des commits et du repo je l'ai supprimé et j'ai réinitialiser le dépôt.
 
+## Formulaire de contact
+
+Formulaire de contact n'est pas terminé car j'ai eu un problème avec l'hébergement donc pas de serveur mail
+
 ## Description
 
 SneakersAddict est une plateforme e-commerce spécialisée dans la vente de chaussures de sport. Le site offre une interface moderne et intuitive permettant aux utilisateurs de parcourir les produits, de les ajouter à leur panier et de passer commande.
