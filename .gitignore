@@ -1,0 +1,29 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de configuration d'environnement
+.env
+
+# Dossiers de dépendances
+/vendor/
+/node_modules/
+
+# Fichiers de cache
+*.log
+*.cache
+.sass-cache/
+
+# Fichiers de configuration IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers de configuration MAMP/WAMP/XAMPP
+/phpmyadmin/
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.swp 
