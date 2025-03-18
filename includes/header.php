@@ -89,44 +89,4 @@ if(isset($_SESSION['panier']) && !empty($_SESSION['panier'])) {
     </div>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // recup les éléments
-    var panierIcon = document.getElementById('panier-icon');
-    var miniPanier = document.getElementById('mini-panier');
-    
-    // affich / masquer le mini-panier au clic sur l'icône
-    panierIcon.addEventListener('click', function(e) {
-        e.preventDefault();
-        if (miniPanier.style.display === 'block') {
-            miniPanier.style.display = 'none';
-        } else {
-            miniPanier.style.display = 'block';
-        }
-    });
-    
-    // Fermer le mini-panier si on clique ailleurs sur la page
-    document.addEventListener('click', function(e) {
-        if (!panierIcon.contains(e.target) && !miniPanier.contains(e.target)) {
-            miniPanier.style.display = 'none';
-        }
-    });
-});
-
-// Fonction pour afficher le mini-panier après ajout d'un produit
-function afficherMiniPanier() {
-    document.getElementById('mini-panier').style.display = 'block';
-    
-    // Masquer automatiquement après 5 secondes
-    setTimeout(function() {
-        document.getElementById('mini-panier').style.display = 'none';
-    }, 5000);
-}
-
-// Si on vient d'ajouter un produit, afficher le mini-panier
-<?php if(isset($_GET['ajout']) && $_GET['ajout'] == 1): ?>
-document.addEventListener('DOMContentLoaded', function() {
-    afficherMiniPanier();
-});
-<?php endif; ?>
-</script> 
+<script src="../assets/js/script.js"></script> 

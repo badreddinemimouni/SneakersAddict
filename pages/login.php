@@ -183,68 +183,6 @@ if(isset($_GET['success']) && $_GET['success'] == 'register') {
         </div>
     </div>
     
-    <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Gestion des onglets
-            const tabLogin = document.getElementById('tab-login');
-            const tabRegister = document.getElementById('tab-register');
-            const loginFormContainer = document.getElementById('login-form-container');
-            const registerFormContainer = document.getElementById('register-form-container');
-            
-            tabLogin.addEventListener('click', function() {
-                tabLogin.classList.add('active');
-                tabRegister.classList.remove('active');
-                loginFormContainer.style.display = 'block';
-                registerFormContainer.style.display = 'none';
-            });
-            
-            tabRegister.addEventListener('click', function() {
-                tabRegister.classList.add('active');
-                tabLogin.classList.remove('active');
-                registerFormContainer.style.display = 'block';
-                loginFormContainer.style.display = 'none';
-            });
-            
-            // Gestion de l'affichage du mot de passe
-            const togglePassword = document.getElementById('toggle-password');
-            const password = document.getElementById('password');
-            
-            if (togglePassword && password) {
-                togglePassword.addEventListener('click', function() {
-                    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-                    password.setAttribute('type', type);
-                    this.classList.toggle('fa-eye');
-                    this.classList.toggle('fa-eye-slash');
-                });
-            }
-            
-            // Gestion de l'affichage du mot de passe pour l'inscription
-            const toggleRegisterPassword = document.getElementById('toggle-register-password');
-            const registerPassword = document.getElementById('register-password');
-            
-            if (toggleRegisterPassword && registerPassword) {
-                toggleRegisterPassword.addEventListener('click', function() {
-                    const type = registerPassword.getAttribute('type') === 'password' ? 'text' : 'password';
-                    registerPassword.setAttribute('type', type);
-                    this.classList.toggle('fa-eye');
-                    this.classList.toggle('fa-eye-slash');
-                });
-            }
-            
-            // Gestion de l'affichage de la confirmation du mot de passe
-            const toggleConfirmPassword = document.getElementById('toggle-confirm-password');
-            const confirmPassword = document.getElementById('register-confirm');
-            
-            if (toggleConfirmPassword && confirmPassword) {
-                toggleConfirmPassword.addEventListener('click', function() {
-                    const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
-                    confirmPassword.setAttribute('type', type);
-                    this.classList.toggle('fa-eye');
-                    this.classList.toggle('fa-eye-slash');
-                });
-            }
-        });
-    </script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html> 

@@ -214,37 +214,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
     
-    <script src="script.js"></script>
-    <script>
-        // Formatage du numéro de carte
-        document.getElementById('card_number').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            let formattedValue = '';
-            
-            for (let i = 0; i < value.length; i++) {
-                if (i > 0 && i % 4 === 0) {
-                    formattedValue += ' ';
-                }
-                formattedValue += value[i];
-            }
-            
-            e.target.value = formattedValue;
-        });
-        
-        // Formatage de la date d'expiration
-        document.getElementById('card_expiry').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            let formattedValue = '';
-            
-            if (value.length > 0) {
-                formattedValue = value.substring(0, 2);
-                if (value.length > 2) {
-                    formattedValue += '/' + value.substring(2, 4);
-                }
-            }
-            
-            e.target.value = formattedValue;
-        });
-    </script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html> 

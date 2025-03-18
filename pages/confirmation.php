@@ -123,6 +123,6 @@ $order = $_SESSION['order'];
         </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html> 

@@ -149,6 +149,6 @@ foreach($_SESSION['panier'] as $produit) {
         </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

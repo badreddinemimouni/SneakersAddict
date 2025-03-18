@@ -16,9 +16,7 @@ function cleanInput($data) {
 }
 
 
-function isValidRoute($route, $allowed_routes) {
-    return in_array($route, $allowed_routes);
-}
+
 
 
 function redirectWithError($page, $error) {
@@ -99,26 +97,6 @@ function logoutUser() {
 }
 
 
-function escapeSQLParam($pdo, $param) {
-    // si c'est un tableau, on applique la fonction a chaque élément
-    if (is_array($param)) {
-        return array_map(function($item) use ($pdo) {
-            return escapeSQLParam($pdo, $item);
-        }, $param);
-    }
-    
-    // on utilise la fonction quote de pdo (c'est mieux que addslashes)
-    if (is_string($param)) {
-        return $pdo->quote($param);
-    }
-    
-    // si c'est un int on le cast juste au cas ou
-    if (is_numeric($param)) {
-        return (int)$param;
-    }
-    
-    // sinon on le laisse tel quel (faut faire gaffe quand meme)
-    return $param;
-}
+
 
 ?> 

@@ -267,46 +267,6 @@ $csrf_token = generateCSRFToken();
         </div>
     </div>
     
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Gestion du modal
-            const modal = document.getElementById('add-user-modal');
-            const btnAdd = document.getElementById('btn-add-user');
-            const closeBtn = document.querySelector('.close');
-            
-            btnAdd.addEventListener('click', function() {
-                modal.style.display = 'block';
-            });
-            
-            closeBtn.addEventListener('click', function() {
-                modal.style.display = 'none';
-            });
-            
-            window.addEventListener('click', function(event) {
-                if (event.target == modal) {
-                    modal.style.display = 'none';
-                }
-            });
-            
-            // Gestion des toggles de mot de passe
-            const toggles = document.querySelectorAll('.toggle-password');
-            
-            toggles.forEach(toggle => {
-                toggle.addEventListener('click', function() {
-                    const input = this.previousElementSibling;
-                    
-                    if (input.type === 'password') {
-                        input.type = 'text';
-                        this.classList.remove('fa-eye');
-                        this.classList.add('fa-eye-slash');
-                    } else {
-                        input.type = 'password';
-                        this.classList.remove('fa-eye-slash');
-                        this.classList.add('fa-eye');
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="../assets/js/admin.js"></script>
 </body>
 </html> 
