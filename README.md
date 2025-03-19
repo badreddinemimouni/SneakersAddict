@@ -1,7 +1,7 @@
 # SneakersAddict
 
 ##Autres projets
-J'ai créer un autre petit projet pour répondre aux compétences manquantes de ce projet ( responsive en mobile first et archi en mvc) voici le lien du projet : https://github.com/badreddinemimouni/Todo_app
+J'ai créer un autre petit projet pour répondre aux compétences manquantes de ce projet ( responsive en mobile first et archi en mvc + requetes asynchrone) voici le lien du projet : https://github.com/badreddinemimouni/Todo_app 
 
 Site e-commerce de vente de chaussures de sport.
 
